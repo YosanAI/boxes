@@ -1,12 +1,11 @@
 import './App.css';
+import { Box } from './components/box';
+import { BoxGrid } from './components/BoxGrid';
 
 export default function App() {
   return (
     <main className="app-shell">
-      <section className="card">
-        <h1>React Environment Ready</h1>
-        <p>Replace <code>src/App.jsx</code> with your component.</p>
-      </section>
+      <BoxGrid rows = {20} columns={30} cellSize={30}/>
     </main>
   );
 }
